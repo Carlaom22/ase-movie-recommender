@@ -51,7 +51,22 @@ app.get("/metrics", (req, res) => {
   });
 });
 
-
+app.get("/", (req, res) => {
+  res.send(`
+    <h1>ASE Movie Recommender API</h1>
+    <p>Backend a correr</p>
+    <p>Endpoints úteis para teste:</p>
+    <ul>
+      <li><a href="/health">/health</a> – estado do serviço</li>
+      <li><a href="/auth/test">/auth/test</a></li>
+      <li><a href="/movies/test">/movies/test</a></li>
+      <li><a href="/ratings/test">/ratings/test</a></li>
+      <li><a href="/recommendations/test">/recommendations/test</a></li>
+      <li><a href="/users/test">/users/test</a></li>
+      <li><a href="/metrics">/metrics</a></li>
+    </ul>
+  `);
+});
 
 app.listen(PORT, () => {
   console.log(`Backend ASE a correr em http://localhost:${PORT}`);
