@@ -214,7 +214,6 @@ O workflow corre automaticamente em:
 * [x] Workflow CI/CD via GitHub Actions
 * [x] Repositório limpo, sem `node_modules`
 * [x] Actions a correr corretamente após push
-* [x] Meta 2 cumprida
 
 ---
 
