@@ -1,0 +1,22 @@
+{
+  "name": "ase-movie-backend",
+  "version": "1.0.0",
+  "description": "Backend do Sistema de Recomendação de Filmes - Projeto ASE M2",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "dev": "nodemon index.js",
+    "test": "echo \"No tests yet\" && exit 0"
+  },
+  "author": "Equipa ASE (Bernardo, Bruno, Carlos, Lucas, Miguel)",
+  "license": "MIT",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.0",
+    "express": "^4.19.0",
+    "pg": "^8.12.0"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.0"
+  }
+}
