@@ -8,8 +8,6 @@ A Meta 2 (M2) exige que o repositório tenha:
 - Workflow CI/CD com GitHub Actions já a correr automaticamente
 - Código versionado corretamente
 
-Este README documenta tudo isso.
-
 ---
 
 # 📁 Estrutura do Projeto
