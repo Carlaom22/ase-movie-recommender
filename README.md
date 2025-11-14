@@ -13,48 +13,48 @@ Este README documenta tudo isso.
 ---
 
 # 📁 Estrutura do Projeto
-
+´´´
 ase-movie-recommender/
 ├── backend/
-│   ├── index.js             
-│   ├── db.js              
-│   ├── routes/               
-│   │   ├── auth.js
-│   │   ├── movies.js
-│   │   ├── ratings.js
-│   │   ├── recommendations.js
-│   │   └── users.js
-│   ├── Dockerfile
-│   ├── package.json
-│   ├── package-lock.json
-│   └── .env                   
+│ ├── index.js # Servidor Express
+│ ├── db.js # Ligação à base de dados Postgres
+│ ├── routes/ # Rotas separadas
+│ │ ├── auth.js
+│ │ ├── movies.js
+│ │ ├── ratings.js
+│ │ ├── recommendations.js
+│ │ └── users.js
+│ ├── Dockerfile
+│ ├── package.json
+│ ├── package-lock.json
+│ └── .env # (Ignorado, usar .env.example)
 │
 ├── frontend/
-│   ├── public/
-│   ├── src/
-│   │   ├── App.jsx
-│   │   ├── pages/            
-│   │   │   ├── Login.jsx
-│   │   │   ├── Register.jsx
-│   │   │   ├── Movies.jsx
-│   │   │   ├── Recommendations.jsx
-│   │   │   └── Profile.jsx
-│   ├── package.json
-│   ├── package-lock.json
-│   └── vite.config.js
+│ ├── public/
+│ ├── src/
+│ │ ├── App.jsx
+│ │ ├── pages/ # UI separada
+│ │ │ ├── Login.jsx
+│ │ │ ├── Register.jsx
+│ │ │ ├── Movies.jsx
+│ │ │ ├── Recommendations.jsx
+│ │ │ └── Profile.jsx
+│ ├── package.json
+│ ├── package-lock.json
+│ └── vite.config.js
 │
 ├── database/
-│   └── init.sql             
+│ └── init.sql # Criação inicial de tabelas
 │
-├── docker-compose.yml         
+├── docker-compose.yml # Backend + DB
 │
 ├── .github/
-│   └── workflows/
-│       └── ci.yml            
+│ └── workflows/
+│ └── ci.yml # Pipeline de CI (M2)
 │
 ├── .env.example
 └── README.md
-
+```
 ---
 
 # Como correr o projeto localmente
@@ -222,6 +222,6 @@ O workflow corre automaticamente em:
 
 * **Bernardo**
 * **Bruno**
-* * **Carlos**
+* **Carlos**
 * **Lucas**
 * **Miguel**
