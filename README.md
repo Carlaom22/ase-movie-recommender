@@ -10,7 +10,7 @@ A Meta 2 (M2) exige que o repositório tenha:
 
 ---
 
-# 📁 Estrutura do Projeto
+# Estrutura do Projeto
 ```
 ase-movie-recommender/
 ├── backend/
