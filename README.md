@@ -13,12 +13,12 @@ Este README documenta tudo isso.
 ---
 
 # 📁 Estrutura do Projeto
-´´´
+```
 ase-movie-recommender/
 ├── backend/
-│ ├── index.js # Servidor Express
-│ ├── db.js # Ligação à base de dados Postgres
-│ ├── routes/ # Rotas separadas
+│ ├── index.js 
+│ ├── db.js 
+│ ├── routes/ 
 │ │ ├── auth.js
 │ │ ├── movies.js
 │ │ ├── ratings.js
@@ -27,13 +27,13 @@ ase-movie-recommender/
 │ ├── Dockerfile
 │ ├── package.json
 │ ├── package-lock.json
-│ └── .env # (Ignorado, usar .env.example)
+│ └── .env 
 │
 ├── frontend/
 │ ├── public/
 │ ├── src/
 │ │ ├── App.jsx
-│ │ ├── pages/ # UI separada
+│ │ ├── pages/ 
 │ │ │ ├── Login.jsx
 │ │ │ ├── Register.jsx
 │ │ │ ├── Movies.jsx
@@ -44,13 +44,13 @@ ase-movie-recommender/
 │ └── vite.config.js
 │
 ├── database/
-│ └── init.sql # Criação inicial de tabelas
+│ └── init.sql 
 │
-├── docker-compose.yml # Backend + DB
+├── docker-compose.yml 
 │
 ├── .github/
 │ └── workflows/
-│ └── ci.yml # Pipeline de CI (M2)
+│ └── ci.yml
 │
 ├── .env.example
 └── README.md
