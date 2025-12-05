@@ -7,7 +7,7 @@ export default function Movies() {
   useEffect(() => {
     async function fetchHealth() {
       try {
-        const res = await fetch("http://localhost:3000/health");
+        const res = await fetch("http://localhost:3001/health");
         if (!res.ok) {
           throw new Error(`HTTP ${res.status}`);
         }
