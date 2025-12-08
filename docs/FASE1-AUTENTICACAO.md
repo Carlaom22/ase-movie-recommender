@@ -356,19 +356,3 @@ curl -X GET http://localhost:3000/auth/me \
 - Auditoria de tentativas de login
 - Verificação de email por confirmação
 
----
-
-## 🎯 **PRÓXIMOS PASSOS (FASE 2)**
-
-A autenticação está **100% implementada e funcional**. O sistema está preparado para:
-
-1. **Proteger rotas** da gestão de filmes
-2. **Associar ratings** a utilizadores autenticados  
-3. **Personalizar recomendações** por utilizador
-4. **Gerir perfis** de utilizador
-
-A **Fase 2** pode começar implementando o catálogo de filmes usando o middleware `authenticateToken` nas rotas que necessitam de autenticação.
-
----
-
-**🏆 RF1 (Autenticação) - STATUS: COMPLETO ✅**
