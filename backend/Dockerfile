@@ -1,19 +1,12 @@
-FROM node:20-alpine
+FROM node:18-alpine
 
-# Pasta de trabalho dentro do container
 WORKDIR /app
 
-# Copiar apenas package.json e package-lock.json primeiro (melhor cache)
 COPY package*.json ./
+RUN npm ci
 
-# Instalar dependências
-RUN npm ci --only=production
-
-# Copiar o resto do código
 COPY . .
 
-# Porta exposta pelo backend
-EXPOSE 3000
+EXPOSE 3001
 
-# Comando de arranque
 CMD ["node", "index.js"]

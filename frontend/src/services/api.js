@@ -56,3 +56,5 @@ export const authAPI = {
     return response.data;
   }
 };
+
+export { api };
