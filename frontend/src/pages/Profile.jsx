@@ -6,7 +6,7 @@ export default function Profile() {
   const { user, logout } = useAuth();
 
   const [profileUser, setProfileUser] = useState(user || null);
-  const [stats, setStats] = useState({ ratings: 0 });
+  const [_stats, setStats] = useState({ ratings: 0 });
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState("");
 
