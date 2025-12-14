@@ -1,3 +1,5 @@
+version: "3.9"
+
 services:
   db:
     image: postgres:16
@@ -21,9 +23,10 @@ services:
     build: ./backend
     container_name: ase_backend
     depends_on:
-      - db
+      db:
+        condition: service_healthy
     environment:
-      PORT: 3000
+      PORT: 3001
       NODE_ENV: production
       DB_HOST: db
       DB_PORT: 5432
@@ -31,7 +34,15 @@ services:
       DB_PASSWORD: ase_password
       DB_NAME: ase_movies
     ports:
-      - "3000:3000"
+      - "3001:3001"
+
+  frontend:
+    build: ./frontend
+    container_name: ase_frontend
+    depends_on:
+      - backend
+    ports:
+      - "80:80"
 
 volumes:
   db_data:

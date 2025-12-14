@@ -2,6 +2,12 @@ require("dotenv").config();
 const express = require("express");
 const cors = require("cors");
 const db = require("./db"); 
+const moviesRoutes = require("./routes/movies");
+const recommendationsRoutes = require("./routes/recommendations");
+const usersRoutes = require("./routes/users");
+
+
+
 
 const app = express();
 
@@ -24,10 +30,10 @@ app.use(cors({
 app.use(express.json());
 
 app.use("/auth", require("./routes/auth"));
-app.use("/movies", require("./routes/movies"));
+app.use("/movies", moviesRoutes);
 app.use("/ratings", require("./routes/ratings"));
-app.use("/recommendations", require("./routes/recommendations"));
-app.use("/users", require("./routes/users"));
+app.use("/recommendations", recommendationsRoutes);
+app.use("/users", usersRoutes);
 
 // Healthcheck 
 app.get("/health", (req, res) => {
